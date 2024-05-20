@@ -1,11 +1,11 @@
-import CategoriesGraph from '../../components/home/CategoriesGraph';
-import GraphTest from '../../components/home/GraphTest';
+import CatagoryGraph from '../../components/home/CatagoryGraph';
+import FinancialOverviewChart from '../../components/home/FinancialOverviewChart';
 
 export default function Home() {
   return (
     <main className=' '>
-      {/* <CategoriesGraph /> */}
-      <GraphTest />
+      <FinancialOverviewChart />
+      <CatagoryGraph />
     </main>
   );
 }

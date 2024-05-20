@@ -107,7 +107,9 @@ export const AuthProvider = ({ children }: { children: ReactElement | ReactEleme
     <html lang='en' className={poppins.className}>
       <body className='bg-begh-background p-4 sm:p-6 h-screen '>
         <AuthContext.Provider value={{ currentUser, loading, setLoading, services }}>
-          <div className=' bg-begh-white h-full shadow-begh-body mx-auto rounded-2xl overflow-x-hidden overflow-y-auto'>
+          <div
+            className={` bg-begh-white h-full shadow-begh-body mx-auto rounded-2xl overflow-x-hidden  ${loading ? 'overflow-y-hidden' : 'overflow-y-auto'}`}
+          >
             {loading ? <Loading /> : children}
           </div>
         </AuthContext.Provider>

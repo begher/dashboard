@@ -11,7 +11,7 @@ type Category =
     }[]
   | null;
 
-const GraphTest = () => {
+const CatagoryGraph = () => {
   const [categories, setCategories] = useState<Category>([]);
   const [isSelected, setIsSelected] = useState<boolean>(false);
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>('');
@@ -108,4 +108,4 @@ const GraphTest = () => {
   );
 };
 
-export default GraphTest;
+export default CatagoryGraph;
